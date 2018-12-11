@@ -6,6 +6,7 @@
 
 ```
 wget -q https://github.com/startlifecoin/MN_guide/blob/master/startlife_install.sh && chmod +x startlife_install.sh && ./startlife_install.sh
+
 ```
 
 2. Wait for the installation to finish and let the script generate a **private key (genkey)** for you.
