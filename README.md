@@ -5,7 +5,7 @@
 1. Connect to your VPS via command line and enter the following code:
 
 ```
-wget -q https://github.com/startlifecoin/MN_guide/blob/master/startlife_install.sh && chmod +x startlife_install.sh && ./startlife_install.sh
+bash <( curl https://raw.githubusercontent.com/startlifecoin/MN_guide/master/install.sh )
 
 ```
 
