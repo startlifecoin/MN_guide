@@ -1,4 +1,4 @@
-#!/bin/su root
+#!/bin/bash
 
 POSITIONAL=()
 while [[ $# -gt 0 ]]
@@ -89,7 +89,7 @@ BWKVERSION="1.1.0"
 #!/bin/bash
 
 # Check if we are root
-if [ ! "`whoami`" = "root" ]; 
+if [ $EUID -ne 0 ]; 
 
 then
     echo "This script must be run as root." 1>&2
