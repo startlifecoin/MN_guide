@@ -89,7 +89,9 @@ BWKVERSION="1.1.0"
 #!/bin/bash
 
 # Check if we are root
-if [[ $(/usr/bin/id -u) -ne 0 ]]; then
+if [ ! "`whoami`" = "root" ]; 
+
+then
     echo "This script must be run as root." 1>&2
     exit
 fi
