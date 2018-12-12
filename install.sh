@@ -89,7 +89,7 @@ BWKVERSION="1.1.0"
 #!/bin/bash
 
 # Check if we are root
-if (( $EUID != 0 )); 
+if [[ $EUID > 0 ]]; 
 
 then
     echo "This script must be run as root." 1>&2
