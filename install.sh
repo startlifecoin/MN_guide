@@ -54,9 +54,7 @@ case $key in
     ;;
     -h|--help)
     cat << EOL
-
 SCN Masternode installer arguments:
-
     -n --normal               : Run installer in normal mode
     -a --advanced             : Run installer in advanced mode
     -i --externalip <address> : Public IP address of VPS
@@ -68,7 +66,6 @@ SCN Masternode installer arguments:
     -b --bootstrap            : Sync node using Bootstrap
     --no-bootstrap            : Don't use Bootstrap
     -h --help                 : Display this help text.
-
 EOL
     exit
     ;;
@@ -113,7 +110,6 @@ clear
 
 if [ -z "$ADVANCED" ]; then
 echo "
-
     ___T_
    | o o |
    |__-__|
@@ -285,7 +281,6 @@ sudo systemctl start startlife.service
 clear
 
 cat << EOL
-
 Now, you need to start your masternode. Please go to your desktop wallet
 Click the Masternodes tab
 Click Start all at the bottom 
@@ -294,5 +289,3 @@ EOL
 read -p "Press Enter to continue after you've done that. " -n1 -s
 
 clear
-
-echo "" && echo "Masternode setup completed." && echo ""
