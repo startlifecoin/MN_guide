@@ -54,7 +54,9 @@ case $key in
     ;;
     -h|--help)
     cat << EOL
+
 SCN Masternode installer arguments:
+
     -n --normal               : Run installer in normal mode
     -a --advanced             : Run installer in advanced mode
     -i --externalip <address> : Public IP address of VPS
@@ -66,6 +68,7 @@ SCN Masternode installer arguments:
     -b --bootstrap            : Sync node using Bootstrap
     --no-bootstrap            : Don't use Bootstrap
     -h --help                 : Display this help text.
+
 EOL
     exit
     ;;
@@ -110,6 +113,7 @@ clear
 
 if [ -z "$ADVANCED" ]; then
 echo "
+
     ___T_
    | o o |
    |__-__|
@@ -132,6 +136,7 @@ echo "
  |                                                  |::
  +------------------------------------------------+::
    ::::::::::::::::::::::::::::::::::::::::::::::::::
+   
 "
 
 sleep 5
@@ -215,7 +220,7 @@ if [[ ("$UFW" == "y" || "$UFW" == "Y" || "$UFW" == "") ]]; then
   yes | ufw enable
 fi
 
-# Install SCN daemon
+# Install STLC daemon
 wget $TARBALLURL
 tar -xzvf $TARBALLNAME 
 rm $TARBALLNAME
@@ -280,6 +285,7 @@ sudo systemctl start startlife.service
 clear
 
 cat << EOL
+
 Now, you need to start your masternode. Please go to your desktop wallet
 Click the Masternodes tab
 Click Start all at the bottom 
