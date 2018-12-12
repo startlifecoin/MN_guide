@@ -84,14 +84,14 @@ TARBALLURL="https://github.com/startlifecoin/startlife/releases/download/1.1.0.0
 TARBALLNAME="linux-gnu.tar.gz"
 BOOTSTRAPURL=""
 BOOTSTRAPARCHIVE=""
-BWKVERSION="1.0.0"
+BWKVERSION="1.1.0"
 
 #!/bin/bash
 
 # Check if we are root
-if [ "$(id -u)" != "0" ]; then
-   echo "This script must be run as root." 1>&2
-   exit 1
+if [[ $(/usr/bin/id -u) -ne 0 ]]; then
+    echo "This script must be run as root." 1>&2
+    exit
 fi
 
 # Install tools for dig and systemctl
