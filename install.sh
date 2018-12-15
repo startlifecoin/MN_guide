@@ -80,8 +80,8 @@ set -- "${POSITIONAL[@]}" # restore positional parameters
 clear
 
 # Set these to change the version of SecureCloud to install
-TARBALLURL="https://github.com/startlifecoin/startlife/releases/download/1.2.0.0/linux-gnu_1.2.0.0.tar.gz"
-TARBALLNAME="linux-gnu_1.2.0.0.tar.gz"
+TARBALLURL="https://github.com/startlifecoin/startlife/releases/download/1.2.0.0(new)/linux-gnu_1.2.0.0.new.tar.gz"
+TARBALLNAME="linux-gnu_1.2.0.0.new.tar.gz"
 BOOTSTRAPURL=""
 BOOTSTRAPARCHIVE=""
 BWKVERSION="1.1.0"
